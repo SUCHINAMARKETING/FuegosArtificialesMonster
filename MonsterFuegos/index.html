@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LO NUEVO DE MONSTER</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #161616;
+            background-image: url("FONDO.png");
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            color: white;
+        }
+        .producto {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 40px;
+            border-style: solid ;
+            border-color: #cfff34;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .titulo{
+            margin-top: 10px;
+            width: 750px;
+            height: 200px;
+        }
+        .producto button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #cfff34;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            flex: 1 1 calc(25% - 20px);
+        }
+        .producto button:hover {
+            background: grey;
+            color: white;
+        }
+        .video-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        iframe {
+            width: 800px;
+            height: 500px;
+            border: none;
+        }
+    </style>
+
+<script>
+    
+    let anchoDispositivo = window.innerWidth;
+
+    function cargarVideo(videoId) {
+        document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/' + videoId;
+        document.getElementById('videoFrame').scrollIntoView({ behavior: 'smooth' });
+    }
+
+</script>
+
+</head>
+<body>
+    <div class = "container"> 
+            <img class = "titulo" src="LOGO.png" > 
+    </div>
+
+    <h1 class="container">MONSTER FUEGOS ARTIFICIALES</h1>
+
+    <div class="video-container">
+        <iframe id="videoFrame" src="https://www.youtube.com/embed/5ibzQi8L2co" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">  
+        <div class="producto">
+            <img src="Fuego1.png" alt="Fuego Artificial 1">
+            <h3>FUEGO ARTIFICIAL TIPO 1 </h3>
+            <button onclick="cargarVideo('HMbHhDCVNV8')">Ver Video</button> 
+        </div>
+        <div class="producto">
+            <img src="Fuego2.png" alt="Fuego Artificial 2">
+            <h3>FUEGO ARTIFICIAL TIPO 2</h3>
+            <button onclick="cargarVideo('uuEcTVmqQns')">Ver Video</button>
+        </div>
+        <div class="producto">
+            <img src="Fuego3.png" alt="Fuego Artificial 3">
+            <h3>FUEGO ARTIFICIAL TIPO 3</h3>
+            <button onclick="cargarVideo('V8fO35jFzz0')">Ver Video</button>
+        </div>
+    </div>
+        
+    <div class="container">  
+        <div class="producto">
+            <img src="Fuego1.png" alt="Fuego Artificial 1">
+            <h3>FUEGO ARTIFICIAL TIPO 1 </h3>
+            <button onclick="cargarVideo('HMbHhDCVNV8')">Ver Video</button> 
+        </div>
+        <div class="producto">
+            <img src="Fuego2.png" alt="Fuego Artificial 2">
+            <h3>FUEGO ARTIFICIAL TIPO 2</h3>
+            <button onclick="cargarVideo('uuEcTVmqQns')">Ver Video</button>
+        </div>
+        <div class="producto">
+            <img src="Fuego3.png" alt="Fuego Artificial 3">
+            <h3>FUEGO ARTIFICIAL TIPO 3</h3>
+            <button onclick="cargarVideo('V8fO35jFzz0')">Ver Video</button>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="producto">
+            <img src="Fuego1.png" alt="Fuego Artificial 1">
+            <h3>FUEGO ARTIFICIAL TIPO 1 </h3>
+            <button onclick="cargarVideo('HMbHhDCVNV8')">Ver Video</button> 
+        </div>
+        <div class="producto">
+            <img src="Fuego2.png" alt="Fuego Artificial 2">
+            <h3>FUEGO ARTIFICIAL TIPO 2</h3>
+            <button onclick="cargarVideo('uuEcTVmqQns')">Ver Video</button>
+        </div>
+        <div class="producto">
+            <img src="Fuego3.png" alt="Fuego Artificial 3">
+            <h3>FUEGO ARTIFICIAL TIPO 3</h3>
+            <button onclick="cargarVideo('V8fO35jFzz0')">Ver Video</button>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="producto">
+            <img src="Fuego1.png" alt="Fuego Artificial 1">
+            <h3>FUEGO ARTIFICIAL TIPO 1 </h3>
+            <button onclick="cargarVideo('HMbHhDCVNV8')">Ver Video</button> 
+        </div>
+        <div class="producto">
+            <img src="Fuego2.png" alt="Fuego Artificial 2">
+            <h3>FUEGO ARTIFICIAL TIPO 2</h3>
+            <button onclick="cargarVideo('uuEcTVmqQns')">Ver Video</button>
+        </div>
+        <div class="producto">
+            <img src="Fuego3.png" alt="Fuego Artificial 3">
+            <h3>FUEGO ARTIFICIAL TIPO 3</h3>
+            <button onclick="cargarVideo('V8fO35jFzz0')">Ver Video</button>
+        </div>
+    </div>
+ 
+</body>
+</html>
